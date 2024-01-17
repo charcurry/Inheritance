@@ -6,8 +6,13 @@ using System.Threading.Tasks;
 
 namespace Inheritance
 {
-    internal class GameObject
+    internal abstract class GameObject
     {
         public Point2D position;
+
+        public GameObject()
+        {
+            Console.WriteLine("GameObject Class Constructed");
+        }
     }
 }

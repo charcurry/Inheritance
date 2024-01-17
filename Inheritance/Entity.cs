@@ -6,12 +6,14 @@ using System.Threading.Tasks;
 
 namespace Inheritance
 {
-    internal class Entity : GameObject
+    internal abstract class Entity : GameObject
     {
         public HealthSystem healthSystem;
 
         public Entity(int health)
         {
+            Console.WriteLine("Entity Class Constructed");
+
             healthSystem = new HealthSystem(health);
         }
     }

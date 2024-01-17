@@ -9,5 +9,10 @@ namespace Inheritance
     internal class Item : GameObject
     {
         public string itemName;
+
+        public Item() 
+        {
+            Console.WriteLine("Item Class Constructed");
+        }
     }
 }

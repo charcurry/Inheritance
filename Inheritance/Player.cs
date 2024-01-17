@@ -15,6 +15,7 @@ namespace Inheritance
 
         public Player(int health) : base(health)
         {
+            Console.WriteLine("Player Class Constructed");
         }
     }
 }
