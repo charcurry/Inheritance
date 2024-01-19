@@ -8,13 +8,23 @@ namespace Inheritance
 {
     internal abstract class Entity : GameObject
     {
-        public HealthSystem healthSystem;
+        private HealthSystem healthSystem;
 
-        public Entity(int health)
+        public Entity()
         {
             Console.WriteLine("Entity Class Constructed");
 
-            healthSystem = new HealthSystem(health);
+            healthSystem = new HealthSystem();
+        }
+
+        public int GetHealth()
+        {
+            return healthSystem.health;
+        }
+
+        public void SetHealth(int health)
+        {
+            healthSystem.health = health;
         }
     }
 }

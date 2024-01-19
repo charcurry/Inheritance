@@ -12,7 +12,7 @@ namespace Inheritance
         public int xpDrop;
         public int goldDrop;
 
-        public Enemy(int health) : base(health)
+        public Enemy()
         {
             Console.WriteLine("Enemy Class Constructed");
         }

@@ -13,7 +13,7 @@ namespace Inheritance
         public int score;
         public int gold;
 
-        public Player(int health) : base(health)
+        public Player()
         {
             Console.WriteLine("Player Class Constructed");
         }

@@ -11,9 +11,8 @@ namespace Inheritance
 
         public int health;
 
-        public HealthSystem(int initHealth)
+        public HealthSystem()
         {
-            health = initHealth;
         }
         public void TakeDamage(int damage)
         {

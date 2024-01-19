@@ -14,11 +14,13 @@ namespace Inheritance
             Console.WriteLine("-----------------");
             Console.WriteLine();
 
-            Player player = new Player(100);
+            Player player = new Player();
+            player.SetHealth(10);
             player.position.x = 0;
             player.position.y = 0;
 
-            Enemy enemy = new Enemy(50);
+            Enemy enemy = new Enemy();
+            enemy.SetHealth(5);
             enemy.position.x = 10;
             enemy.position.y = 10;
 
@@ -27,8 +29,8 @@ namespace Inheritance
             item.position.x = 15;
             item.position.y = 15;
 
-            Console.WriteLine("Player Health: " + player.healthSystem.health);
-            Console.WriteLine("Enemy Health: " + enemy.healthSystem.health);
+            Console.WriteLine("Player Health: " + player.GetHealth());
+            Console.WriteLine("Enemy Health: " + enemy.GetHealth());
 
             Console.WriteLine();
             Console.WriteLine("Press any key to exit...");
